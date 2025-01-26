@@ -21,7 +21,8 @@ h1 {
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
+  overflow: hidden;
   min-height: calc(100vh - 50px);
   flex-direction: column;
   height: 100vh;
@@ -68,13 +69,6 @@ h1 {
   transition: width .5s ease-in-out;
 }
 
-.img-box:nth-child(4) {
-  background: url(assets/Four.jpg);
-  background-size: cover;
-  background-position: center;
-  transition: width .5s ease-in-out;
-}
-
 .img-box h3 {
   color: white;
   position: absolute;
@@ -85,7 +79,7 @@ h1 {
 }
 
 .img-box:hover {
-  width: 300px;
+  width: 250px;
   cursor: pointer;
 }
 

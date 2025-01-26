@@ -18,9 +18,6 @@ const Gallery = () => {
           <div className="img-box">
             <h3>India</h3>
           </div>
-          <div className="img-box">
-            <h3>Dubia</h3>
-          </div>
         </div>
       </div>
 
