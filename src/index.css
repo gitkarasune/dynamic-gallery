@@ -1,10 +1,14 @@
-
-
 * {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
   box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -13,27 +17,33 @@ h1 {
   align-items: center;
   padding: 10px 5px;
   background-color: #f2e9ff;
-  background-image: linear-gradient(45deg, blue, red, dodgerblue, pink, gold);
+  background-image: linear-gradient(45deg, blue 0%, red 20%, dodgerblue 30%, pink 40%, gold 50%);
 }
 
 .container {
   width: 100%;
+  min-height: calc(100vh - 50px);
+  flex-direction: column;
   height: 100vh;
   background-color: #f2e9ff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .gallery {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.kendev {
+  font-family: "cursive", sans-serif;
 }
 
 .img-box {
-  width: 100px;
+  width: 80px;
   height: 400px;
   margin: 10px;
   border-radius: 50px;
@@ -43,20 +53,26 @@ h1 {
   position: relative;
   transition: width .5s ease-in-out;
 }
+
 .img-box:nth-child(2) {
   background: url(assets/Two.jpg);
   background-size: cover;
   background-position: center;
+  transition: width .5s ease-in-out;
 }
+
 .img-box:nth-child(3) {
   background: url(assets/Three.jpg);
   background-size: cover;
   background-position: center;
+  transition: width .5s ease-in-out;
 }
+
 .img-box:nth-child(4) {
   background: url(assets/Four.jpg);
   background-size: cover;
   background-position: center;
+  transition: width .5s ease-in-out;
 }
 
 .img-box h3 {
@@ -76,7 +92,14 @@ h1 {
 .img-box:hover h3 {
   opacity: 1;
   bottom: 25px;
-
 }
 
-
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  width: 100%;
+}
