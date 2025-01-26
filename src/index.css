@@ -1,68 +1,82 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  background-color: #f2e9ff;
+  background-image: linear-gradient(45deg, blue, red, dodgerblue, pink, gold);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2e9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.img-box {
+  width: 100px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(assets/One.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width .5s ease-in-out;
+}
+.img-box:nth-child(2) {
+  background: url(assets/Two.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(3) {
+  background: url(assets/Three.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(4) {
+  background: url(assets/Four.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box h3 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s;
+}
+
+.img-box:hover {
+  width: 300px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.img-box:hover h3 {
+  opacity: 1;
+  bottom: 25px;
+
 }
+
+
