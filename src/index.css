@@ -59,14 +59,12 @@ h1 {
   background: url(assets/Two.jpg);
   background-size: cover;
   background-position: center;
-  transition: width .5s ease-in-out;
 }
 
 .img-box:nth-child(3) {
   background: url(assets/Three.jpg);
   background-size: cover;
   background-position: center;
-  transition: width .5s ease-in-out;
 }
 
 .img-box h3 {
