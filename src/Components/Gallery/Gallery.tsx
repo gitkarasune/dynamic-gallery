@@ -4,19 +4,19 @@ const Gallery = () => {
 
   return (
     <>
-      <div>
-        <h1>Dynamic Gallery</h1>
+      <div className="expanding-gallery">
+        <h2 className="">Expanding Gallery</h2>
       </div>
       <div className="container">
         <div className="gallery">
           <div className="img-box">
-            <h3>Nigeria</h3>
+            <h3 className="names">Kendev</h3>
           </div>
           <div className="img-box">
-            <h3>China</h3>
+            <h3 className="names">Marcdev</h3>
           </div>
           <div className="img-box">
-            <h3>India</h3>
+            <h3 className="names">Kendev</h3>
           </div>
         </div>
       </div>
